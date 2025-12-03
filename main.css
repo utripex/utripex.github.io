@@ -1,0 +1,19 @@
+body {
+  font-size: 18px;
+}
+
+#header h1 {
+  font-size: 25px;
+}
+
+nav {
+  font-size: 20px;
+}
+
+#text {
+  font-size: 14px;
+}
+
+#footer {
+  font-size: 14px;
+}
