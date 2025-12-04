@@ -64,6 +64,57 @@
       programistów gier RPG, ale dziś nie ma co na to liczyć.
     </p>
     
+    <p>
+      Zacząłem tworzyć grę Amri. W grze mamy budżet i myślimy
+      na co go wydać. Grę piszę w Scali, to mi najbardziej
+      odpowiada, ale na forku pro. Normalnie Scala pro nie jest.
+      
+      <br> <br>
+      // Masz budżet i na co go wydać? <br>
+// Gra Amri <br>
+      <br>
+object Main { <br>
+    def main(args: Array[String]) = { <br>
+        println("Gra Amri") <br>
+      <br>
+        var budzet = new Budzet <br>
+    }<br>
+}<br>
+      <br>
+class Budzet { <br>
+    private var value: Float = 0 <br>
+  <br>
+    def get() = { <br>
+        value <br>
+    }<br>
+  <br>
+    def set(value: Float) = { <br>
+        this.value = value <br>
+    }<br>
+  <br>
+    def add(value: Float) = { <br>
+        this.value += value <br>
+    } <br>
+  <br>
+    def minus(value: Float) = { <br>
+        this.value -= value <br>
+    } <br>
+} <br>
+      
+    </p>
+    
+    <p>
+      Wklejam też link do kompilatora online Scali.
+      https://www.programiz.com/online-compiler/8Wafeuz9E3rwG
+    </p>
+    
+    <p>
+      Z czasem jak odkrywam świat gier to dochodzę do różnych wniosków.
+      Im lepsze rozwiązanie tym szybciej widać błędy. Czasem chce się coś
+      napisać, jakąś grę RPG, ale mogą pojawić się różne błędy,
+      które mogą przedłużyć czas wydania gry.
+    </p>
+    
   </div>
   
   <div id="footer">
