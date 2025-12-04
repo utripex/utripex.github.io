@@ -1,0 +1,87 @@
+// Masz budżet i na co go wydać?
+// Gra Amri
+
+object Main {
+def main(args: Array[String]) = {
+    
+println("Gra Amri")
+
+    var budzet = new Budzet
+    budzet.set(100000)
+    budzet.show()
+    
+    var banan = new Produkt
+    
+    banan.nazwa_().set("Banan")
+    banan.wartosc_().set(100)
+    
+    println(banan.nazwa_().get())
+  }
+}
+
+class Nazwa {
+    private var value: String = ""
+    
+    def get() = {
+        value
+    } 
+    
+    def set(value: String) = {
+        this.value = value
+    }
+    
+}
+
+class Wartosc {
+    private var value: Float = 0
+    
+    def get() = {
+        value
+    } 
+    
+    def set(value: Float) = {
+        this.value = value
+    }
+}
+
+class Produkt {
+    private var nazwa: Nazwa = new Nazwa
+    private var wartosc: Wartosc = new Wartosc
+    
+    def nazwa_() = {
+        nazwa
+    }
+    
+    def wartosc_() = {
+        wartosc
+    }
+    
+}
+
+class Sklep {
+    
+}
+
+class Budzet {
+  private var value: Float = 0
+
+  def get() = {
+    value
+  }
+
+  def set(value: Float) = {
+    this.value = value
+  }
+
+  def add(value: Float) = {
+    this.value += value
+  }
+
+  def minus(value: Float) = {
+    this.value -= value
+  }
+  
+  def show() = {
+      println("Twój budżet wynosi "+ get())
+  }
+}
