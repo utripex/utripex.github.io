@@ -74,6 +74,22 @@
       tablicy tego nie mam. Dla mnie zdecydowanie wygrana wektora.
     </p>
     
+    <p>
+      Żeby przeczesać wektor czy tablicę używa się np. pętli for. I ona działa dopóki nie
+      dojdzie do rozmiaru. W przypadku wektora użyłem metody size() klasy Vector, a w przypadku
+      tablicy zewnętrznej metody sizeof(). No i wyświetlałem elementy obu struktur. 
+      Elementy wektora wyświetliłem bez problemu, a w przypadku tablicy wyszedłem poza zakres.
+      Wyjście poza zakres tablicy sprawia, że odwołujemy się do zupełnie innych danych w pamięci
+      spoza tablicy, ale nie to jest tu tak specyficzne. Chodzi o to, że metoda sizeof() źle pobiera
+      rozmiar tablicy. Tak więc tutaj też wygrana wektora.
+    </p>
+    
+    <p>
+      Podsumowując, wektor jest dużo bardziej korzystną opcją w użyciu od tablicy, ponieważ dużo
+      trudniej wyjść w nim poza jego zakres i tym samym sprawić, że gra RPG po prostu przestanie
+      działać.
+    </p>
+    
   </div>
   
   <div id="footer">
