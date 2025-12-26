@@ -43,7 +43,35 @@
       Tak patrząc, w programowaniu gier RPG bardzo ważne są różne rzeczy. No i tak patrząc,
       pomyślałem sobie jak wygląda porównanie tablic do wektorów. Wektor to taka lista danych
       występująca w języku C++. Tablice występują w wielu językach programowania, też w C++.
-      No i uważam, że <strong>wektor zdecydowanie dominuje nad tablicami</strong>.
+      No i uważam, że <strong>wektor zdecydowanie dominuje nad tablicami</strong>. Alokacja
+      pamięci w wektorach jest bardzo prosta i wygodna, natomiast w tablicach jest taka, że
+      wyskakują dane nawet z losowego fragmentu pamięci kiedy przekroczymy rozmiar tablicy, a
+      o to bardzo łatwo.
+    </p>
+    
+    <p>
+      Przyjrzyjmy się zatem alokacji pamięci. Wektory:
+    </p>
+    
+    <p>
+      vector &lt;int> stack; <br>
+      stack.push_back(5);
+    </p>
+    
+    <p>
+      Po prostu tworzę sobie wektor, a następnie dodaję wartość 5 na stacka. No to teraz tablica:
+    </p>
+    
+    <p>
+      int tab [10]; <br>
+      tab [0] = 5;
+    </p>
+    
+    <p>
+      Widać różnicę? Tworzę tablicę składającą się z 10 elementów no ale dodaję 1 element.
+      W tablicy mogę stosunkowo łatwo wyjść poza zakres, w wektorze już tak nie jest. Jasne,
+      żeby pobrać element z wektora też używam nawiasów keadratowych no ale mam metody, w
+      tablicy tego nie mam. Dla mnie zdecydowanie wygrana wektora.
     </p>
     
   </div>
