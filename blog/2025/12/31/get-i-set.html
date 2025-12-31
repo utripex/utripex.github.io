@@ -55,6 +55,14 @@
       a program może się wyłączyć lub też działać dalej, ale niekoniecznie prawidłowo.
     </p>
     
+    <p>
+      Rozwiązaniem okazują się metody, które dają nam dostęp do zmiennej chroniąc klasę przed tym żeby np. nie wyjść poza zakres czy definiując zachowania
+      odpowiednie dla danej zmiennej. Czyli powiedzmy w klasie jest zwykła zmienna, a nie wektor i wiadomo, taka zwykła zmienna nie posiada indeksów,
+      ponieważ sama jedna ma dostęp do pamięci no to metoda mówi tak, zmienna ma taki i taki dostęp więc już w metodzie indeksów używać nie będziemy. Jest
+      to więc bardzo ważna ochrona. Bezpośrednio w kodzie ktoś by nie wiedział jak korzystać ze zmiennej więc ktoś by mógł nawet używać indeksów czy w ogóle
+      innych mechanizmów. Metoda więc definiuje dostęp do zasobów. Bezpośredni dostęp pokazuje, masz dostęp i tyle, a to trochę za mało.
+    </p>
+    
   </div>
   
   <div id="footer">
