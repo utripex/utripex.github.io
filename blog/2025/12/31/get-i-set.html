@@ -48,7 +48,11 @@
     
     <p>
       Co się stanie kiedy mamy bezpośredni dostęp do zmiennej? Na pierwszy rzut oka nic, no ale zmienna może nie posiadać mechanizmów
-      zabezpieczających ją przed nieautoryzowanym dostępem.
+      zabezpieczających ją przed nieautoryzowanym dostępem. Przypuśćmy, że mamy wektor, a w nim 10 elementów. Chcemy się dostać do 5 elementu?
+      Nie ma problemu. Problem pojawia się wtedy kiedy chcemy uzyskać dostęp do powiedzmy 20 elementu. Wektor nie posiada tylu elementów więc
+      program wyświetli błąd i może zakończyć swoje działanie. Przez 1 wektor program może się zakończyć, trochę słabo. A jak odwołamy się do -5
+      elementu? Ale jak to, przecież indeksy wektora nie są ujemne? A jak wprowadzimy ujemny indeks? To będziemy że tak powiem poza zakresem wektora,
+      a program może się wyłączyć lub też działać dalej, ale niekoniecznie prawidłowo.
     </p>
     
   </div>
