@@ -60,3 +60,15 @@ span.cpp-docket {
   color: pink;
 }
 
+span.cpp-inside {
+  color: #D9B02B;
+}
+
+span.cpp-type {
+  color: #2BBCD9;
+}
+
+span.cpp-this {
+  color: #902BD9;
+}
+
