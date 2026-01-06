@@ -67,22 +67,35 @@
     &nbsp;&nbsp; <span class="cpp-inside">public:</span> <br>
       <br>
     &nbsp;&nbsp; <span class="cpp-type">int</span> get() <span class="cpp-curly">{</span> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp; return value; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; return value<span class="cpp-docket">;</span> <br>
     &nbsp;&nbsp; <span class="cpp-curly">}</span> <br>
       <br>
     &nbsp;&nbsp; <span class="cpp-type">void</span> set(<span class="cpp-type">int</span> value) <span class="cpp-curly">{</span> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp; <span class="cpp-this">this-></span>value = value; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; <span class="cpp-this">this-></span>value = value<span class="cpp-docket">;</span> <br>
     &nbsp;&nbsp; <span class="cpp-curly">}</span> <br>
       <br>
       <br>
     &nbsp;&nbsp; <span class="cpp-inside">private:</span> <br>
       <br>
-    &nbsp;&nbsp; <span class="cpp-type">int</span> value = 0; <br>
+    &nbsp;&nbsp; <span class="cpp-type">int</span> value = 0<span class="cpp-docket">;</span> <br>
       <br>
       <br>
 <span class="cpp-curly">}</span><span class="cpp-docket">;</span>
       
     </code> </p>
+    
+    
+    <p>
+      Czyli mamy tutaj wiele ciekawych rzeczy. Klasa, ok, a w niej public, private. Tam gdzie jest public to pod tym są metody, a pod private zmienna. Są to elementy klasy.
+      Zmienna to pewna wartość, a metody dają do niej dostęp. Zmienna ma tak, typ, w tym przypadku int oznaczający liczby całkowite, nazwę i wartość. Tu zmienna od razu ma wartość
+      0, a nazwę ma "value". Nazwy można dawać dowolne, tak żeby się nie powtarzały w ramach jednej klasy czy tam zakresu. Ale typy zmiennych czyli np. int są już wbudowane i ich
+      się trzymamy. Więc metoda zaczyna się np. od void czy int. Oznacza to typ, który zwraca. Następnie jest nazwa, argumenty i ciało metody. "return" oznacza, że metoda zwraca wynik
+      i typ zwracany jest tutaj pokazany na samym początku metody. Jak jest void to nie ma return, bo metoda nie zwraca nic, int no to zwracamy liczbę całkowitą. 
+    </p>
+    
+    <p>
+      Jest to tylko przykład klasy, a nie cały program w C++. Cały program wygląda nieco inaczej, może też posiadać klasy, ale to już zupełnie inna historia.
+    </p>
     
     
   </div>
