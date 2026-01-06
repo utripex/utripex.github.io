@@ -48,3 +48,15 @@ img {
   height: auto;
 }
 
+span.cpp-class {
+  color: green;
+}
+
+span.cpp-curly {
+  color: blue;
+}
+
+span.cpp-docket {
+  color: pink;
+}
+
